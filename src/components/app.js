@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import { Carousel,Tabs  } from 'antd';
+import {Carousel, Tabs} from 'antd';
 import logo from './../imgs/logo.svg';
 import './app.less';
 
 const TabPane = Tabs.TabPane;
-
 
 
 class App extends Component {
@@ -91,7 +90,7 @@ class App extends Component {
                         <div id="search_box" className="search_box">
                             <form id="searchForm" className="searchForm">
                                 <input type="text" className="search_input" maxLength={64} placeholder="搜索职位、公司或地点"/>
-                                <input type="submit"  className="search_button" value="搜索"/>
+                                <input type="submit" className="search_button" value="搜索"/>
                             </form>
                         </div>
                         <dl className="hotSearch">
@@ -102,7 +101,8 @@ class App extends Component {
                             <dd><a href="https://activity.lagou.com/topic/momo.html" target="_blank">架构师</a></dd>
                             <dd><a href="https://activity.lagou.com/topic/momo.html" target="_blank">Java高级工程师</a></dd>
                             <dd><a href="https://activity.lagou.com/topic/momo.html" target="_blank">PHP高级工程师</a></dd>
-                            <dd><a href="https://activity.lagou.com/topic/momo.html" target="_blank">Go高级工程师(游戏端)</a></dd>
+                            <dd><a href="https://activity.lagou.com/topic/momo.html" target="_blank">Go高级工程师(游戏端)</a>
+                            </dd>
 
                         </dl>
                         {/*走马灯*/}
@@ -112,8 +112,24 @@ class App extends Component {
                             <div><h3>3</h3></div>
                             <div><h3>4</h3></div>
                         </Carousel>
+                        {/*tab切换*/}
                         <Tabs defaultActiveKey="1">
-                            <TabPane tab="推荐职位" key="1">推荐职位</TabPane>
+                            <TabPane tab="推荐职位" key="1">
+                                {/*jobList*/}
+                                <div className="jobList">
+                                    <ul>
+                                        <li className="job-item">
+                                            <div className="job">
+                                                <div className="job-left"></div>
+                                                <div className="job-right"></div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </TabPane>
                             <TabPane tab="所有职位" key="2">所有职位</TabPane>
                         </Tabs>
 
@@ -127,7 +143,7 @@ class App extends Component {
         );
     }
 }
-class List extends Component {
+class JobList extends Component {
     constructor(props) {
         super(props);
     }
