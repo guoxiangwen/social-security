@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "react",
+    "es2015"
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ],
+    "transform-object-rest-spread",
+    "transform-object-assign"
+  ]
+}

@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+.app-container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    header{
+        width: 100%;
+        height: 80px;
+        //padding: 10px 0;
+        box-sizing: border-box;
+        //background: #222;
+        color: #fff;
+        a{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            text-indent: -999999em;
+            height: 80px;
+            background: url(https://www.lgstatic.com/i/image/M00/C3/3E/Cgp3O1jbjeeAIiqEAAFTtu7Jc0g484.JPG) center center no-repeat;
+            background-color: #bde9d3;
+            img{
+            }
+        }
+
+    }
+    .top_toolbar{
+        .top_tbar{
+            min-width: 1024px;
+            height: 30px;
+            background-color: #333;
+            .inner{
+                position: relative;
+                max-width: 1308px;
+                margin: 0 auto;
+                .lg_tbar_l{
+                    float: left;
+                    a{
+                        color: #c4c3c3;
+                        float: left;
+                        line-height: 15px;
+                        padding: 0 12px;
+                        margin: 7px 0 0;
+                        text-decoration: none;
+                    }
+                    a.lg_app{
+                        color: #08d7a2;
+                        background: url(//www.lgstatic.com/www/static/common/widgets/header_c/modules/img/app_icon_0495d1d.png) 10px 0 no-repeat;
+                        padding: 0 12px 0 27px;
+                    }
+                }
+            }
+        }
+    }
+    main.main_container{
+        width: 1024px;
+        margin: 35px auto 0;
+        padding-bottom: 100px;
+        min-height: 898px;
+        .content{
+            width: 100%;
+            .search_box{
+                border: 0 solid #00b38a;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                height: 37px;
+                position: relative;
+                .searchForm{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                }
+                .search_input{
+                    //width: 80%;
+                    flex:3;
+                    height: 37px;
+                    line-height: 23px;
+                    float: left;
+                    font-size: 16px;
+                    padding: 5px 8px 5px 10px;
+                    margin: 0;
+                    border: 2px solid #00b38a;
+                    border-right: 0;
+                }
+                .search_button{
+                    flex:1;
+                    height: 37px;
+                    //width: 20%;
+                    color: #FFF;
+                    font-size: 18px;
+                    border: 2px solid #00b38a;
+                    background: #00b38a;
+                    float: right;
+                }
+            }
+            .hotSearch{
+                overflow: hidden;
+                margin: 6px 0 18px;
+                dt{
+                    width: 70px;
+                    font-size: 14px;
+                    float: left;
+                }
+                dd{
+                    margin-left: 17px;
+                    float: left;
+                    a{
+                        color: #00b38a;
+                        background-color: transparent;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+};
+@keyframes app-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+//走马灯
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+}
+//.app-logo{
+//    animation: app-logo-spin infinite 20s linear;
+//    max-width: 200px;
+//}

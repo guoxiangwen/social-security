@@ -35,3 +35,12 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+.idea/
+coverage
+selenium-debug.log
+build
+.vscode
+test/e2e/reports
+test/unit/coverage
+
