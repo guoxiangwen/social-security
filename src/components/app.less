@@ -18,7 +18,7 @@
             overflow: hidden;
             text-indent: -999999em;
             height: 80px;
-            background: url(https://www.lgstatic.com/i/image/M00/C3/3E/Cgp3O1jbjeeAIiqEAAFTtu7Jc0g484.JPG) center center no-repeat;
+            background: url('./../imgs/d.jpg') center center no-repeat;
             background-color: #bde9d3;
             img{
             }
@@ -57,7 +57,7 @@
         width: 1024px;
         margin: 35px auto 0;
         padding-bottom: 100px;
-        min-height: 898px;
+        //min-height: 898px;
         .content{
             width: 100%;
             .search_box{
@@ -116,11 +116,52 @@
         //    joblist
             .jobList{
                 .job-item{
+                    position: relative;
+                    width: 744px;
+                    height: 123px;
+                    border-bottom: 1px dashed #e1e1e1;
                     .job{
                         height: 62px;
                         background-color: #fff;
                         padding-top: 22px;
                         padding-left: 15px;
+                        .job-left{
+                            width: 400px;
+                            margin-right: 20px;
+                            float: left;
+                            .position_name{
+                                height: 34px;
+                                line-height: 28px;
+                            }
+                            .position_main_info{
+                                height: 28px;
+                                .salary{
+                                    font-size: 16px;
+                                    color: #fa6041;
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                        .job-right{
+                            width: 294px;
+                            float: right;
+                            .company_name{
+                                height: 34px;
+                                color: #00b38a;
+                                a{
+                                    font-size: 16px;
+                                    color: #00b38a;
+                                    float: left;
+                                    max-width: 200px;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                            .industry{
+                                height: 28px;
+                            }
+                        }
                     }
                 }
             }
@@ -139,6 +180,15 @@
     background: #364d79;
     color: #fff;
     overflow: hidden;
+}
+.fl{
+    float: left;
+}
+.wordCut{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
 }
 //.app-logo{
 //    animation: app-logo-spin infinite 20s linear;

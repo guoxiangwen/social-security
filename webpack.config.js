@@ -5,7 +5,7 @@ let path = require('path');
 // let ExtractTextPlugin = require("extract-text-webpack-plugin");
 const WebpackBrowserPlugin = require('webpack-browser-plugin');
 
-const vendors = ['react', 'react-dom','antd','axios'];
+const vendors = ['react', 'react-dom'];
 module.exports = {
     devtool: 'cheap-eval-source-map',
     devServer: {
@@ -22,12 +22,13 @@ module.exports = {
         historyApiFallback: true,
         clientLogLevel: "none",
         proxy: {
-            '/sms-web/*': {
-                target: 'http://localhost:9099',
-                changeOrigin: true,
-                secure: false
-            }
+            '/renshemobile/*': {
+                target: 'http://118.123.227.15:8082',
+                // target: 'http://172.17.122.40:8082',
 
+                // changeOrigin: true,
+                // secure: false
+            }
         }
     },
     entry: {

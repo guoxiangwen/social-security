@@ -1,11 +1,13 @@
 import { render } from 'react-dom';
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory  } from 'react-router';
 import './main.less';
 
 
 
 import App from './components/app';
+import Detail from './components/detail';
+import Index from './components/index';
 
 import NotFound from './components/404';
 import Demo from './components/demo';
@@ -18,17 +20,27 @@ import Demo from './components/demo';
 const ROUTER_CONFIG = [
     {
         path:'/',
-        component:App
+        component:App,
+        indexRoute: { component: Index },
+        childRoutes:[
+            {path:'index',component:Index},//主页
+            {path:'detail/:id',component:Detail},//detail
+        ]
+
     },
     {
         path:'/demo',
         component:Demo
     },
+    // {
+    //     path:'/detail',
+    //     component:Detail
+    // },
     {
         path:'*',
         component:NotFound //404
     },
 ];
 render((
-  <Router history={browserHistory} routes={ROUTER_CONFIG} />
+  <Router history={hashHistory} routes={ROUTER_CONFIG} />
 ), document.getElementById('app'));
