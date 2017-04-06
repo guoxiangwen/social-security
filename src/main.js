@@ -8,6 +8,7 @@ import './main.less';
 import App from './components/app';
 import Detail from './components/detail';
 import Index from './components/index';
+import UserInfo from './components/userInfo';
 
 import NotFound from './components/404';
 import Demo from './components/demo';
@@ -25,6 +26,7 @@ const ROUTER_CONFIG = [
         childRoutes:[
             {path:'index',component:Index},//主页
             {path:'detail/:id',component:Detail},//detail
+            {path:'userInfo',component:UserInfo},//UserInfo
         ]
 
     },

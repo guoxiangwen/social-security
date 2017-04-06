@@ -26,8 +26,8 @@ module.exports = {
                 target: 'http://118.123.227.15:8082',
                 // target: 'http://172.17.122.40:8082',
 
-                // changeOrigin: true,
-                // secure: false
+                changeOrigin: true,
+                secure: false
             }
         }
     },

@@ -22,8 +22,8 @@ class App extends Component {
                     <div className="top_tbar">
                         <div className="inner">
                             <div className="lg_tbar_l">
-                                <a rel="nofollow" href="https://www.lagou.com/app/download.html" className="lg_app"
-                                   target="_blank">拉勾APP</a>
+                                {/*<a rel="nofollow" href="https://www.lagou.com/app/download.html" className="lg_app"*/}
+                                   {/*target="_blank">拉勾APP</a>*/}
                             </div>
 
 

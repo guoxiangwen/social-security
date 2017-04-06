@@ -1,6 +1,11 @@
 import React, {Component, PropTypes} from 'react';
 import './detail.less'
 import Http from "./../utils/http";
+import {Modal,Steps, Button, message } from 'antd';
+import {Link} from 'react-router'
+
+
+const Step = Steps.Step;
 
 
 class Detail extends Component {
@@ -64,25 +69,51 @@ class Resume extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            visible:false
+            visible: false,
+            current:0
         }
-        this.showModal = this.showModal.bind(this);
     }
-    showModal (){
 
-    }
+
 
     render() {
         return (
             <div className="position-content-r">
-                <div className="jd_collection  job-collection">投个简历</div>
-                <Modal title="Basic Modal" visible={this.state.visible}
-                       onOk={this.handleOk} onCancel={this.handleCancel}
-                >
-                    <p>some contents...</p>
-                    <p>some contents...</p>
-                    <p>some contents...</p>
-                </Modal>
+                <div className="jd_collection  job-collection">
+                    <Link to={`/userInfo`}>
+                        投个简历
+                    </Link>
+                </div>
+                {/*<Modal title="Basic Modal" visible={this.state.visible} width={1024}*/}
+                       {/*onOk={this.handleOk} onCancel={this.handleCancel}*/}
+                       {/*maskClosable = {false}*/}
+                {/*>*/}
+                    {/*<div>*/}
+                        {/*<Steps current={current}>*/}
+                            {/*{steps.map(item => <Step key={item.title} title={item.title} />)}*/}
+                        {/*</Steps>*/}
+                        {/*<div className="steps-content">{steps[this.state.current].content}</div>*/}
+                        {/*<div className="steps-action">*/}
+                            {/*{*/}
+                                {/*this.state.current < steps.length - 1*/}
+                                {/*&&*/}
+                                {/*<Button type="primary" onClick={() => this.next()}>Next</Button>*/}
+                            {/*}*/}
+                            {/*{*/}
+                                {/*this.state.current === steps.length - 1*/}
+                                {/*&&*/}
+                                {/*<Button type="primary" onClick={() => message.success('Processing complete!')}>Done</Button>*/}
+                            {/*}*/}
+                            {/*{*/}
+                                {/*this.state.current > 0*/}
+                                {/*&&*/}
+                                {/*<Button style={{ marginLeft: 8 }} onClick={() => this.prev()}>*/}
+                                    {/*Previous*/}
+                                {/*</Button>*/}
+                            {/*}*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                {/*</Modal>*/}
             </div>
         )
 
