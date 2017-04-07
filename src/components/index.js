@@ -56,8 +56,6 @@ class Index extends Component {
                     <TabPane tab="所有职位" key="1">
                         {/*jobList*/}
                         <JobList searchKey={this.state.searchVal} urlHandler="touristSearchJobHander"/>
-
-
                     </TabPane>
                     <TabPane tab="推荐职位" key="2">
                         <RecJobList urlHandler="touristRecmdJobHandler"/>

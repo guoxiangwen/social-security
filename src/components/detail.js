@@ -56,6 +56,13 @@ class Detail extends Component {
                     </div>
 
                     <Resume />
+                    <div className="position-content-r">
+                        <div className="jd_collection  job-collection">
+                            <Link to={`/userInfo`}>
+                                我的简历
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -78,42 +85,12 @@ class Resume extends Component {
 
     render() {
         return (
-            <div className="position-content-r">
+            <div className="position-content-r" >
                 <div className="jd_collection  job-collection">
                     <Link to={`/userInfo`}>
                         投个简历
                     </Link>
                 </div>
-                {/*<Modal title="Basic Modal" visible={this.state.visible} width={1024}*/}
-                       {/*onOk={this.handleOk} onCancel={this.handleCancel}*/}
-                       {/*maskClosable = {false}*/}
-                {/*>*/}
-                    {/*<div>*/}
-                        {/*<Steps current={current}>*/}
-                            {/*{steps.map(item => <Step key={item.title} title={item.title} />)}*/}
-                        {/*</Steps>*/}
-                        {/*<div className="steps-content">{steps[this.state.current].content}</div>*/}
-                        {/*<div className="steps-action">*/}
-                            {/*{*/}
-                                {/*this.state.current < steps.length - 1*/}
-                                {/*&&*/}
-                                {/*<Button type="primary" onClick={() => this.next()}>Next</Button>*/}
-                            {/*}*/}
-                            {/*{*/}
-                                {/*this.state.current === steps.length - 1*/}
-                                {/*&&*/}
-                                {/*<Button type="primary" onClick={() => message.success('Processing complete!')}>Done</Button>*/}
-                            {/*}*/}
-                            {/*{*/}
-                                {/*this.state.current > 0*/}
-                                {/*&&*/}
-                                {/*<Button style={{ marginLeft: 8 }} onClick={() => this.prev()}>*/}
-                                    {/*Previous*/}
-                                {/*</Button>*/}
-                            {/*}*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
-                {/*</Modal>*/}
             </div>
         )
 
